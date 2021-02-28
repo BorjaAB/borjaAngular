@@ -1,0 +1,22 @@
+<h1>Web de Reservas</h1>
+<p>Listado de restaurantes</p>
+
+<table CELLSPACING="10">
+    <tr>
+        <td>Nombre</td>
+        <td>Direcci&oacute;</td>
+        <td>Tel&eacute;ono</td>
+        <td>Tipo de comida</td>
+    </tr>
+    <tr *ngFor="let restaurante of restaurantes">
+        <td (click)="seleccionarRestaurante(restaurante)">{{restaurante.nombre}}</td>
+        <td>{{restaurante.direccion}}</td>
+        <td>{{restaurante.telefono}}</td>
+        <td>{{restaurante.tipoComida}}</td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <app-restaurante-detalle [restaurante]="restauranteSeleccionado"></app-restaurante-detalle>
+        </td>
+    </tr>
+</table>

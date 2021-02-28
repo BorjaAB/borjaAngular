@@ -1,0 +1,16 @@
+<table *ngIf="restaurante">
+    <tr>
+        <td class="ancho">
+            <h2>Restaurante {{restaurante.nombre}}</h2>
+            <div>{{restaurante.direccion}}</div>
+            <div><span>Telefono del reservas: </span>{{restaurante.telefono}}</div>
+            <div><span>Tipo Comida de comida: </span>{{restaurante.tipoComida}}</div>
+            <div><span>Precio medio: </span>{{restaurante.precioComida}}</div>
+            <div><span>Plazas disponibles: </span>{{restaurante.numeroPlazasDisponibles}}</div>
+        </td>
+        <td>
+            <button><a href="#">Formulario de reservas</a></button>
+        </td>
+    </tr>
+    <tr></tr>
+</table>
