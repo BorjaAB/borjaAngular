@@ -8,3 +8,7 @@ td {
 tr {
     border: black 1px solid;
 }
+
+.seleccionado {
+    background-color: burlywood;
+}

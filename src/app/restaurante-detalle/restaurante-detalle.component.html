@@ -8,9 +8,8 @@
             <div><span>Precio medio: </span>{{restaurante.precioComida}}</div>
             <div><span>Plazas disponibles: </span>{{restaurante.numeroPlazasDisponibles}}</div>
         </td>
-        <td>
-            <button><a href="#">Formulario de reservas</a></button>
-        </td>
     </tr>
-    <tr></tr>
+    
 </table>
+
+<button ng-click="ShowForm()" ng-hide="formVisibility">Formulario de reservas</button>

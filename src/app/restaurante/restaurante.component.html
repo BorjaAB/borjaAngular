@@ -4,12 +4,12 @@
 <table CELLSPACING="10">
     <tr>
         <td>Nombre</td>
-        <td>Direcci&oacute;</td>
-        <td>Tel&eacute;ono</td>
+        <td>Direcci&oacute;n</td>
+        <td>Tel&eacute;fono</td>
         <td>Tipo de comida</td>
     </tr>
-    <tr *ngFor="let restaurante of restaurantes">
-        <td (click)="seleccionarRestaurante(restaurante)">{{restaurante.nombre}}</td>
+    <tr *ngFor="let restaurante of restaurantes" [class.seleccionado]="restaurante===restauranteSeleccionado" (click)="seleccionarRestaurante(restaurante)">
+        <td>{{restaurante.nombre}}</td>
         <td>{{restaurante.direccion}}</td>
         <td>{{restaurante.telefono}}</td>
         <td>{{restaurante.tipoComida}}</td>

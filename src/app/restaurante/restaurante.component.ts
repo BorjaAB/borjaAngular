@@ -9,6 +9,8 @@ import { RESTAURANTES } from '../mock-restaurantes';
 })
 export class RestauranteComponent implements OnInit {
 
+  press = false;
+
   restaurantes = RESTAURANTES;
   restauranteSeleccionado! : Restaurante;
 
